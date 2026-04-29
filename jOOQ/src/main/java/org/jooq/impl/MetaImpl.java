@@ -1888,7 +1888,7 @@ final class MetaImpl extends AbstractMeta {
                 int nullable = column.get(10, int.class);                // NULLABLE
                 String remarks = column.get(11, String.class);           // REMARKS
                 String defaultValue = column.get(12, String.class);      // COLUMN_DEF
-                int charOctetLength = columns.size() >= 16
+                int charOctetLength = column.size() >= 16
                     ? column.get(15, int.class)                          // CHAR_OCTET_LENGTH
                     : 0;
 
